@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "STEMNotes (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "STEMNotes (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
