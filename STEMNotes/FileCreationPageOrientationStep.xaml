@@ -9,14 +9,16 @@
     mc:Ignorable="d">
 
     <Grid>
-        <TextBlock>Page orientation</TextBlock>
+        <TextBlock Grid.Row="0">Page orientation</TextBlock>
         <!--Landscape or portrait-->
-        <StackPanel Orientation="Horizontal">
-            
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <RadioButton>Portrait</RadioButton>
+            <RadioButton>Landscape</RadioButton>
         </StackPanel>
         <!--Step 1-->
-        <StackPanel Orientation="Horizontal">
-
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button>Next</Button>
+            <Button>Cancel</Button>
         </StackPanel>
     </Grid>
 </Page>

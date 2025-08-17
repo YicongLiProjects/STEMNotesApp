@@ -9,14 +9,17 @@
     mc:Ignorable="d">
 
     <Grid>
-        <TextBlock>File name</TextBlock>
+        <TextBlock Grid.Row="0">File name</TextBlock>
         <!--Select location and enter name-->
-        <StackPanel Orientation="Horizontal">
-            
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <TextBlock>File name</TextBlock>
+            <TextBox></TextBox>
         </StackPanel>
         <!--Step 3-->
-        <StackPanel Orientation="Horizontal">
-
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button>Previous</Button>
+            <Button>Cancel</Button>
+            <Button>Create file</Button>
         </StackPanel>
     </Grid>
 </Page>

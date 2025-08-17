@@ -9,14 +9,18 @@
     mc:Ignorable="d">
 
     <Grid>
-        <TextBlock>Page type</TextBlock>
+        <TextBlock Grid.Row="0">Page type</TextBlock>
         <!--3 page types most commonly used for STEM-->
-        <StackPanel Orientation="Horizontal">
-            
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <RadioButton>Blank</RadioButton>
+            <RadioButton>Ruled</RadioButton>
+            <RadioButton>Graph</RadioButton>
         </StackPanel>
         <!--Step 2-->
-        <StackPanel Orientation="Horizontal">
-
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button>Previous</Button>
+            <Button>Next</Button>
+            <Button>Cancel</Button>
         </StackPanel>
     </Grid>
 </Page>
