@@ -46,8 +46,7 @@
                 FontSize="20" VerticalContentAlignment="Bottom" BorderThickness="0" Background="Transparent"
                 x:Name="landscapeNoteBtn">
             <StackPanel>
-                <Image Source="/Assets/landscape.png" Stretch="UniformToFill"></Image>
-                <TextBlock Text="New Landscape note" HorizontalAlignment="Center" Margin="0,-50,0,0"></TextBlock>
+                <Image Source="/Assets/landscape.png" Stretch="UniformToFill"></Image>                <TextBlock Text="New Landscape note" HorizontalAlignment="Center" Margin="0,-50,0,0"></TextBlock>
             </StackPanel>
         </Button>
         <!--App name-->
@@ -62,7 +61,7 @@
             Open existing note
         </Button>
         
-        <!--Company name-->
+        <!--Publisher name-->
         <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,50,50" FontSize="40">
             Yicong's projects
         </TextBlock>

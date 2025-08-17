@@ -13,10 +13,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Content Remove="Assets\STEMNotesIcon.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <None Remove="Assets\portrait.png" />
+    <None Remove="FileCreationFileNameStep.xaml" />
+    <None Remove="FileCreationPageOrientationStep.xaml" />
+    <None Remove="FileCreationPageTypeStep.xaml" />
     <None Remove="NoteEditorPage.xaml" />
   </ItemGroup>
 
@@ -47,6 +47,21 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250606001" />
   </ItemGroup>
   <ItemGroup>
+    <Page Update="FileCreationFileNameStep.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="FileCreationPageTypeStep.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="FileCreationPageOrientationStep.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="NoteEditorPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -67,5 +82,6 @@
     <PublishReadyToRun Condition="'$(Configuration)' != 'Debug'">True</PublishReadyToRun>
     <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
     <PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>
+    <ApplicationIcon>Assets\STEMNotesIcon.ico</ApplicationIcon>
   </PropertyGroup>
 </Project>
